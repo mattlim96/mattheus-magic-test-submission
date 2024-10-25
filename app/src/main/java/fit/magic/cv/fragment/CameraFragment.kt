@@ -405,4 +405,10 @@ class CameraFragment : Fragment(), PoseLandmarkerHelper.LandmarkerListener, Exer
             fragmentCameraBinding.exerciseInfoView.setFeedback(feedback)
         }
     }
+
+    override fun showStatus(status: String) {
+        activity?.runOnUiThread {
+            fragmentCameraBinding.exerciseInfoView.setStatus(status)
+        }
+    }
 }

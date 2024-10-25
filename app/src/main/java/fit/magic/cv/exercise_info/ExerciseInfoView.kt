@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.widget.FrameLayout
 import android.widget.ProgressBar
 import android.widget.TextView
-
 import fit.magic.cv.R
 
 class ExerciseInfoView @JvmOverloads constructor(
@@ -18,8 +17,8 @@ class ExerciseInfoView @JvmOverloads constructor(
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
     private lateinit var tvFeedback: TextView
+    private lateinit var tvStatus: TextView
     private lateinit var tvRepCount: TextView
-
     private lateinit var progress: ProgressBar
 
     init {
@@ -30,13 +29,17 @@ class ExerciseInfoView @JvmOverloads constructor(
         val view = LayoutInflater.from(context).inflate(R.layout.view_exercise_info, this, true)
 
         tvFeedback = view.findViewById(R.id.text_view_feedback)
+        tvStatus = view.findViewById(R.id.text_view_status)
         tvRepCount = view.findViewById(R.id.text_view_rep_count)
-
         progress = view.findViewById(R.id.rep_progress)
     }
 
     fun setFeedback(feedback: String) {
         tvFeedback.text = feedback
+    }
+
+    fun setStatus(status: String) {
+        tvStatus.text = status
     }
 
     fun setRepCount(count: Int) {
