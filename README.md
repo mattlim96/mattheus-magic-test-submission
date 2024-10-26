@@ -1,7 +1,3 @@
-# Submissions - Mattheus Lim
-- [Short video presentation](https://drive.google.com/file/d/1cw74hLyDrLs7gV9OesCIQG4BQMyx-k0W/view?usp=drive_link)
-- [Screen recording of android app testing](https://drive.google.com/file/d/1MdIKU2f_N8dT4U2ja1rEB9Q8ENrSlBx-/view?usp=drive_link)
-
 # Data Scientist Assessment
 
 This test is designed to assess your ability to analyze real-time data output from the MediaPipe computer vision library.
